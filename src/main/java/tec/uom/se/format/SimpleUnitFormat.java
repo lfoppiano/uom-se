@@ -1015,6 +1015,8 @@ public abstract class SimpleUnitFormat extends AbstractUnitFormat {
     DEFAULT.label(MetricPrefix.CENTI(Units.LITRE), "cl");
     ASCII.label(MetricPrefix.DECI(Units.LITRE), "dL");
     DEFAULT.label(MetricPrefix.DECI(Units.LITRE), "dl");
+    DEFAULT.label(MetricPrefix.MILLI(Units.MOLE), "mmol");
+    ASCII.label(MetricPrefix.MILLI(Units.MOLE), "mmol");
     // DEFAULT.label(NonUnits.GALLON_LIQUID_US, "gal");
     // DEFAULT.label(NonUnits.OUNCE_LIQUID_US, "oz");
     // DEFAULT.label(NonUnits.GALLON_DRY_US, "gallon_dry_us");
