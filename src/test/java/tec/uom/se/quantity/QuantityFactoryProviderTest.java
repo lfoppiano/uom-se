@@ -39,7 +39,6 @@ import javax.measure.Quantity;
 import javax.measure.quantity.Length;
 import javax.measure.quantity.Mass;
 import javax.measure.quantity.Time;
-import javax.measure.spi.QuantityFactoryService;
 import javax.measure.spi.ServiceProvider;
 
 import org.junit.BeforeClass;
@@ -48,12 +47,12 @@ import org.junit.Test;
 /**
  * @author Werner Keil
  */
-public class QuantityFactoryServiceTest {
-  static QuantityFactoryService service;
+public class QuantityFactoryProviderTest {
+  static ServiceProvider service;
 
   @BeforeClass
   public static void init() {
-    service = ServiceProvider.current().getQuantityFactoryService();
+    service = ServiceProvider.current();
   }
 
   @Test
